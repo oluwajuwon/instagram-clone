@@ -1,0 +1,19 @@
+{
+  "name": "instagram-clone",
+  "version": "1.0.0",
+  "description": "An instagram clone API using graphQL server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oluwajuwon/instagram-clone.git"
+  },
+  "author": "Oluwajuwon, Kizito, Luqman, Nnaemeka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oluwajuwon/instagram-clone/issues"
+  },
+  "homepage": "https://github.com/oluwajuwon/instagram-clone#readme"
+}
