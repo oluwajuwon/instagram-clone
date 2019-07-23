@@ -9,7 +9,8 @@
     "build": "npm-run-all clean bundle",
     "start": "node build/server.js",
     "build:start": "npm-run-all build start",
-    "start:dev": "nodemon --watch src --exec 'npm run build:start'"
+    "start:dev": "nodemon --watch src --exec 'npm run build:start'",
+    "test": "jest"
   },
   "keywords": [],
   "author": "Oluwajuwon Fagbohungbe <jfagbohungbe@gmail.com> (https://github.com/oluwajuwon/)",
@@ -42,9 +43,12 @@
     "@babel/plugin-transform-runtime": "7.5.5",
     "@babel/preset-env": "7.5.5",
     "@babel/register": "7.5.5",
+    "@types/jest": "^24.0.15",
+    "jest": "^24.8.0",
     "nodemon": "1.19.1",
     "npm-run-all": "4.1.5",
-    "rimraf": "2.6.3"
+    "rimraf": "2.6.3",
+    "supertest": "^4.0.2"
   },
   "dependencies": {
     "@babel/runtime": "7.5.5"
