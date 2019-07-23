@@ -1,0 +1,52 @@
+{
+  "name": "instagram-clone-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/server.js",
+  "scripts": {
+    "clean": "rimraf build",
+    "bundle": "babel src -d build",
+    "build": "npm-run-all clean bundle",
+    "start": "node build/server.js",
+    "build:start": "npm-run-all build start",
+    "start:dev": "nodemon --watch src --exec 'npm run build:start'"
+  },
+  "keywords": [],
+  "author": "Oluwajuwon Fagbohungbe <jfagbohungbe@gmail.com> (https://github.com/oluwajuwon/)",
+  "contributors": [
+    {
+      "name": "Oluwajuwon Fagbohungbe",
+      "email": "jfagbohungbe@gmail.com",
+      "url": "https://github.com/oluwajuwon"
+    },
+    {
+      "name": "Luqman Olushi",
+      "email": "olushilukmon03@gmail.com",
+      "url": "https://github.com/codeshifu"
+    },
+    {
+      "name": "Kizito Akhilome",
+      "email": "hovkard@gmail.com",
+      "url": "https://github.com/akhilome"
+    },
+    {
+      "name": "Nnaemeka Okoro",
+      "email": "okorosolomon056@gmail.com",
+      "url": "https://github.com/okoroemeka"
+    }
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "7.5.5",
+    "@babel/core": "7.5.5",
+    "@babel/plugin-transform-runtime": "7.5.5",
+    "@babel/preset-env": "7.5.5",
+    "@babel/register": "7.5.5",
+    "nodemon": "1.19.1",
+    "npm-run-all": "4.1.5",
+    "rimraf": "2.6.3"
+  },
+  "dependencies": {
+    "@babel/runtime": "7.5.5"
+  }
+}
